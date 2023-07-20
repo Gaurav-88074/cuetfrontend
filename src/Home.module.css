@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homePage{
+  height:auto;
+  /* background: url('../image/yoga.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 10px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 3px solid black; */
+}
+.homePageHeader{
+  height: 70px;
+  position:sticky;
+  top :0px;
+  /* min-height: 100px;
+  max-height: 100px; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  justify-content: space-around;
+  background-color: #FFFF;
+  /* border: 3px solid black; */
+  box-shadow: 0px 0px 1px 1px #00c2b6;
+}
+.hphs1{
+  height: 100%;
+  width: 15%;
+  background-color: #fff;
+  /* border: 3px solid black; */
+}
+.hphs2{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: left;
+  background-color: #fff;
+  /* border: 3px solid black; */
+}
+.navItems{
+  font-size: 20px;
+  color: #00c2b6;
+  font-weight:500;
+  transition: opacity 0.5s;
+  opacity: 0.8;
+  /* border: 3px solid black; */
+}
+.navItems:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.hphs3{
+  height: 100%;
+  width: 25%;
+  min-width: 210px;
+  max-width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  /* padding: 0 40px; */
+  /* border: 3px solid black; */
+}
+.hphAuthSection{
+  padding: 5px;
+  min-width: 100px;
+  min-height: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  border: none;
+  color: #00c2b6;
+  transition: box-shadow 0.3s;
+  background-color: #fff;
+  border: 1px solid #00c2b6;
+}
+.hphAuthSection:hover{
+  color: #ffff;
+  background-color: #00c2b6;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 1px #00c2b6;
+}
+.hphAuthSignup{
+  color: #ffff;
+  background-color: #00c2b6;
+}
+
+@media only screen and (max-width: 600px) {
+  .hphs1{
+    display: none;
+  }
+  .hphs2{
+    display: none;
+  }
+  body {
+    /* background-color: black; */
+  }
+}

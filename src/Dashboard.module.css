@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f7f7;
+}
+.header{
+    height: 70px;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+.nav1{
+    height: 100%;
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 30px;
+    /* border: 1px solid black; */
+}
+@media screen and (max-width:600px) {
+    .nav1{
+        justify-content: center;
+    }
+}
+
+.logo{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    background-color: #fff;
+    color: #00c2b6;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.nav2{
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.hphAuthSection{
+    padding: 5px;
+    min-width: 100px;
+    min-height: 35px;
+    border-radius: 3px;
+    font-size: 16px;
+    border: none;
+    color: #00c2b6;
+    transition: box-shadow 0.3s;
+    background-color: #fff;
+    border: 1px solid #00c2b6;
+}
+.hphAuthSection:hover{
+    color: #ffff;
+    background-color: #00c2b6;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px #00c2b6;
+}
+.hphAuthSignup{
+    color: #ffff;
+    background-color: #00c2b6;
+}
+.batchInfo1{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #00c2b6;
+
+    /* border :1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 8%);
+
+}
+.main{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px 30px;
+}
+.batchCard{
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: white;
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 8%);
+
+}
+.batchCard:hover {
+    cursor: pointer;
+    /* box-shadow: 0 5px 15px 0 rgb(0 0 0 / 8%); */
+    /* box-shadow: 0 10px 25px 0 rgb(0 0 0 / 8%); */
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 8%);
+}
+.cardTop {
+    height: 30%;
+    background-color: #00c2b6;
+    border-bottom: 2px solid #eaeaea;
+
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.subject-title {
+    padding-top: 10px;
+    padding-left: 20px;
+    /* background-color: red; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+
+
+}
+
+.cardMid {
+    height: 50%;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.cardBottom {
+    height: 20%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border-bottom: 2px solid blue; */
+}
+.price{
+    color: #00c2b6;
+}
+/* ------- */
+.skeleton {
+    height: 270px;
+    width: 80vw;
+    max-width: 700px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: white;
+    transition-property: box-shadow;
+    transition-duration: 0.7s;
+    overflow: hidden;
+    animation: skeleton-loading 1s linear infinite alternate ;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(0, 0%, 80%);
+    }
+
+    100% {
+        background-color: hsl(0, 0%, 90%);
+    }
+}
+
+.currentBatchCard{
+
+}
+.currentBatch{
+    height: auto;
+    /* min-height: 300px; */
+    width: 80vw;
+    max-width: 700px;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 8%);
+    /* margin-top: 20px;
+    margin-left: 20px; */
+    /* margin: 20px; */
+}
+.batchLeft{
+    /* height: 100%; */
+    width: 50%;
+    min-height: 300px;
+    min-width: 300px;
+    background-color: #fff;
+    /* background: url('../image/yoga2.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid black; */
+}
+.batchRight{
+    /* height: 100%; */
+    width: 50%;
+    min-height: 300px;
+    min-width: 300px;
+    background-color: #fff;
+    /* border: 1px solid black; */
+}
+.batchHeading{
+    background-color: #fff;
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    font-weight: bold;
+}
+.subHeadings{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    
+}
+span{
+    background-color: #fff;
+}
+
+
+/* ********** */
+
+.linkInput{
+    height: 80%;
+    width: 70%;
+    padding-left: 20px;
+    border: none;
+    /* border-color: #00c2b6;; */
+    /* outline: none; */
+}
+.statement{
+    height: 80%;
+    width: 70%;
+    padding-left: 20px;
+    border: none;
+    background-color: #ffff;
+    color: #00c2b6;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border-color: #00c2b6;; */
+    /* outline: none; */
+}
+.subject{
+    width: 60%;
+    /* border: 1px solid black; */
+
+}
